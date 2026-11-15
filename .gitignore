@@ -1,0 +1,46 @@
+# Environment variables (CRITICAL: Never commit secrets)
+.env
+.env.local
+.env.*.local
+backend/.env
+frontend/.env
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv
+
+# SQLite databases
+*.sqlite
+*.sqlite3
+*.db
+backend/smartdesk.db
+
+# Node & Frontend build
+node_modules/
+dist/
+dist-ssr/
+*.local
+
+# Editor and OS
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log
+
+# Uploads
+backend/uploads/*
+!backend/uploads/.gitkeep
+
+# Additional secrets and credentials
+*.pem
+*.key
+credentials.json
+service-account*.json
